@@ -3,6 +3,10 @@ const fibonacci = function(number) {
     {
         return "OOPS";
     }
+    else if(number==0)
+    {
+        return 0;
+    }
     let target = +number;
     let a = 1;
     let b = 0;
@@ -12,7 +16,6 @@ const fibonacci = function(number) {
         c=a+b;
         b=a;
         a=c;
-        console.log(c);
     }
     return c;
 };
